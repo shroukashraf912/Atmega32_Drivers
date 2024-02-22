@@ -1,0 +1,58 @@
+/*
+ * ADC_config.h
+ *
+ *  Created on: Sep 10, 2022
+ *      Author: SHA
+ */
+
+#ifndef COTS_MCAL_ADC_ADC_CONFIG_H_
+#define COTS_MCAL_ADC_ADC_CONFIG_H_
+
+
+
+/*MADC_SET_REFERANCE_VOLATAGEoptions:
+ *
+ * 1- MADC_AVCC_REFERANCE_VOLTAGE
+ * 2- MADC_V_REFERANCE_VOLTAGE
+ *
+*/
+#define ADC_REFERANCE_VOLATAGE ADC_AVCC_REFERANCE_VOLTAGE
+
+
+/*MADC Prescaler options
+ *  MADC_2_PRESCALER
+ *  MADC_4_PRESCALER
+ *  MADC_8_PRESCALER
+ *  MADC_16_PRESCALER
+ *  MADC_32_PRESCALER
+ *  MADC_64_PRESCALER
+ *  MADC_128_PRESCALER
+*/
+
+#define MADC_SET_PPRESCALAR MADC_64_PRESCALER
+
+/*
+ * 1- ADC_LEFT_ADJUSTMENT
+ * 2- ADC_RIGHT_ADJUSTMENT
+ * */
+
+#define ADC_SET_ADJUSTMENT ADC_RIGHT_ADJUSTMENT
+
+/*
+ * (Enable / Disable )
+ * */
+#define ADC_INTERRUPT_ENABLE  Enable
+
+/*
+ * (Enable / Disable )
+ * */
+#define ADC_ENABLE            Enable
+
+#endif /* COTS_MCAL_ADC_ADC_CONFIG_H_ */
+
+
+
+//
+
+//
+
