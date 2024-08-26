@@ -250,7 +250,7 @@ void MDIO_vEnableInternalPullUp(u8 A_u8PortNo, u8 A_u8PinNo ,u8 A_u8ConnectPullu
 	switch(A_u8PortNo)
 	{
 	  /* Connect or disconnect the pull up resistance to the given pin in port A */
-	  case PORTA:
+	  case DIO_PORTA:
 		  if (A_u8ConnectPullup == DIO_HIGH)
 		  {
 			  CLR_BIT(SFIOR,PUD);
@@ -263,7 +263,7 @@ void MDIO_vEnableInternalPullUp(u8 A_u8PortNo, u8 A_u8PinNo ,u8 A_u8ConnectPullu
 		  }
 		  break;
 	  /* Connect or disconnect the pull up resistance to the given pin in port B */
-	  case PORTB:
+	  case DIO_PORTB:
 		  if (A_u8ConnectPullup == DIO_HIGH)
 		  {
 			  CLR_BIT(SFIOR,PUD);
@@ -276,7 +276,7 @@ void MDIO_vEnableInternalPullUp(u8 A_u8PortNo, u8 A_u8PinNo ,u8 A_u8ConnectPullu
 		  }
 		  break;
 	  /* Connect or disconnect the pull up resistance to the given pin in port C */
-	  case PORTC:
+	  case DIO_PORTC:
 		  if (A_u8ConnectPullup == DIO_HIGH)
 		  {
 			  CLR_BIT(SFIOR,PUD);
@@ -289,7 +289,7 @@ void MDIO_vEnableInternalPullUp(u8 A_u8PortNo, u8 A_u8PinNo ,u8 A_u8ConnectPullu
 		  }
 		  break;
 	  /* Connect or disconnect the pull up resistance to the given pin in port D */
-	  case PORTD:
+	  case DIO_PORTD:
 		  if (A_u8ConnectPullup == DIO_HIGH)
 		  {
 			  CLR_BIT(SFIOR,PUD);
