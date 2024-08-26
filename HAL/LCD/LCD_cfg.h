@@ -106,5 +106,8 @@
 #define Entry_Mode_Set    0b00000110
 
 
+#define MAX_LCD_COLS 16  // Adjust based on your LCD's column count
+#define LCD_FIRST_ROW 0x80
+#define LCD_SECOND_ROW 0xC0
 
 #endif /* COTS_HAL_LCD_LCD_CFG_H_ */

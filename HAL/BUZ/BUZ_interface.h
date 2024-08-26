@@ -37,8 +37,32 @@ typedef struct
 	u8 Active_State ;
 }BUZ_Type;
 /*########################################################*/
+/*
+ ****************************************************************************************
+ * Function_Name ==>   HBUZ_vInit(A_SBUZ_Configuration)
+ * Description   ==>   This Function to initialize the pin which connected to Buzzer as output pin.
+ *  Arguments    ==>   struct has the led port,pin,status
+ *  Return       ==>   void
+ ****************************************************************************************
+*/
 void HBUZ_vInit   (BUZ_Type A_SBUZ_Configuration);
+/*
+ ****************************************************************************************
+ * Function_Name ==>   HBUZ_vBUZOn(A_SBUZ_Configuration)
+ * Description   ==>   This Function to turn on the buzzer.
+ *  Arguments    ==>   struct has the led port,pin,status
+ *  Return       ==>   void
+ ****************************************************************************************
+*/
 void HBUZ_vBUZOn  (BUZ_Type A_SBUZ_Configuration);
+/*
+ ****************************************************************************************
+ * Function_Name ==>   HBUZ_vBUZOff(A_SBUZ_Configuration)
+ * Description   ==>   This Function to turn off the buzzer.
+ *  Arguments    ==>   struct has the led port,pin,status
+ *  Return       ==>   void
+ ****************************************************************************************
+*/
 void HBUZ_vBUZOff (BUZ_Type A_SBUZ_Configuration);
 /*########################################################*/
 #endif /* COTS_HAL_BUZ_BUZ_INTERFACE_H_ */

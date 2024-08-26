@@ -39,9 +39,41 @@ typedef struct
 }LED_Type;
 /*########################################################*/
 //The Declaration Of The functions
+/*
+ ****************************************************************************************
+ * Function_Name ==>   HLED_vInit(A_SLED_Configuration)
+ * Description   ==>   This Function to initialize the pin which connected to led as output pin.
+ *  Arguments    ==>   struct has the led port,pin,status
+ *  Return       ==>   void
+ ****************************************************************************************
+*/
 void HLED_vInit      (LED_Type A_SLED_Configuration);
+/*
+ ****************************************************************************************
+ * Function_Name ==>   HLED_vLedOn(A_SLED_Configuration)
+ * Description   ==>   This Function to turn on the led that connected to the Mc.
+ *  Arguments    ==>   struct has the led port,pin,status
+ *  Return       ==>   void
+ ****************************************************************************************
+*/
 void HLED_vLedOn     (LED_Type A_SLED_Configuration);
+/*
+ ****************************************************************************************
+ * Function_Name ==>   HLED_vLedOff(A_SLED_Configuration)
+ * Description   ==>   This Function to turn on the led that connected to the Mc.
+ *  Arguments    ==>   struct has the led port,pin,status
+ *  Return       ==>   void
+ ****************************************************************************************
+*/
 void HLED_vLedOff    (LED_Type A_SLED_Configuration);
+/*
+ ****************************************************************************************
+ * Function_Name ==>   HLED_vLedToggle(A_SLED_Configuration)
+ * Description   ==>   This Function to Toggle the led that connected to the Mc.
+ *  Arguments    ==>   struct has the led port,pin,status
+ *  Return       ==>   void
+ ****************************************************************************************
+*/
 void HLED_vLedToggle (LED_Type A_SLED_Configuration);
 /*########################################################*/
 #endif /* HAL_LED_LED_INTERFACE_H_ */
